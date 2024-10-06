@@ -1,0 +1,178 @@
+body {  
+    font-family: 'Arial', sans-serif;  
+    line-height: 1.6;  
+    margin: 0;  
+    background-color: #121212; /* Fundo escuro */  
+    color: #E0E0E0; /* Texto claro */  
+}  
+
+.imagem-fundo {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100vw;  
+    height: 100vh;  
+    background-image: url('assets/fundo.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    z-index: -1;   
+}  
+
+.container {  
+    width: 90%;  
+    max-width: 1200px; /* Limite de largura máxima para grandes telas */  
+    margin: auto;  
+    padding: 20px; /* Adição de espaçamento interno */  
+    overflow: hidden;  
+}  
+
+header {  
+    background: linear-gradient(90deg, #1a1a1a, #2b2b2b);  
+    color: #fff;  
+    padding: 40px 0; /* Mais espaço superior e inferior para maior destaque */  
+    text-align: center;  
+    border-bottom: 2px solid #009aef; /* Adição de uma borda inferior para ênfase */  
+}  
+
+h1 {  
+    margin: 0;  
+    font-size: 2.5em;  
+    color: #ffffff;  
+}  
+
+nav {  
+    margin: 20px 0;  
+    display: inline-block; /* Centraliza a barra de navegação */  
+}  
+
+.navbar {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+.navbar li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+.navbar a {  
+    text-decoration: none;  
+    color: #E0E0E0;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;  
+}  
+
+.navbar a:hover {  
+    background: #2b2b2b;  
+    transform: scale(1.1);  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse para destaque */  
+}  
+
+h2 {  
+    background: #2b2b2b;  
+    color: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    margin-top: 30px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para destacar os títulos */  
+}  
+
+section {  
+    background: #1f1f1f;  
+    padding: 25px;  
+    margin: 20px 0;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  
+    transition: transform 0.3s, background 0.3s;  
+}  
+
+section:hover {  
+    transform: translateY(-5px);  
+    background: #212121; /* Leve alteração de cor no hover para interação */  
+}  
+
+.project {  
+    margin: 15px 0;  
+    padding: 15px;  
+    border-left: 4px solid #009aef;  
+    background: #333;  
+    transition: background 0.3s;  
+}  
+
+.project:hover {  
+    background: #444;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 20px 0;  
+    background-color: #1a1a1a;  
+    color: #E0E0E0;  
+    margin-top: 20px;  
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Sombra superior para separar do conteúdo */  
+}  
+
+footer p {  
+    margin: 0;  
+}  
+
+.switch {
+    background-color: red;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+}
+
+.switch_btn {
+    background-color: transparent;
+    border: none;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.switch_btn > img {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    transition: ease-in-out 100s;
+}
+
+#us-flag {
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+#br-flag {
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {  
+    h1 {  
+        font-size: 2em; /* Ajuste de fonte para telas menores */  
+    }  
+
+    .navbar a {  
+        padding: 8px 10px; /* Menor espaçamento em dispositivos pequenos */  
+    }  
+
+    section, .project {  
+        padding: 15px; /* Ajuste de padding para consistência */  
+    }  
+}
